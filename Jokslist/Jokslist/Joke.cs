@@ -8,18 +8,8 @@ namespace Jokslist
 {
     public class Joke
     {
-        private string joke;
-        private int rating;
-        public Joke(int joke, int rating)
-        {
-            this.joke = joke;
-            this.rating = rating;
-        }
-
-        public int Rating
-        {
-            get { return  ; }
-            set { rating = value; }
-        }
+        //add the properties
+        //add constructor
+        //add getter and setter functions
     }
 }
