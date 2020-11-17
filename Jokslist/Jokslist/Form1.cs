@@ -12,6 +12,7 @@ namespace Jokslist
 {
     public partial class Form1 : Form
     {
+        //you need to initialise the array of jokes here with joke object instances
         Joke[] jokes = { };
 
         int jokeIndex = 0;
@@ -23,6 +24,7 @@ namespace Jokslist
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //there maybe a bug here if the properties of class are not public or you use getter and setter functions
             jokeText.Text = jokes[0].joke;
             ratingTextBox.Text = jokes[0].rating;
         }
@@ -40,5 +42,6 @@ namespace Jokslist
             ratingTextBox.Text = jokes[0].rating;
         }
 
+        //Add the next button function and code....
     }
 }
